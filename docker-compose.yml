@@ -1,0 +1,14 @@
+services:
+  sveltekit:
+    container_name: radio-z-player
+    working_dir: /app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app
+#    command: "yarn dev"
+    stdin_open: true
+    tty: true
