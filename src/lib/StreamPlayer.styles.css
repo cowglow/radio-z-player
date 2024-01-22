@@ -1,0 +1,36 @@
+.wrapper {
+    /*animation: 20s soundline infinite both linear;*/
+    background-color: darkred;
+    display: flex;
+    border: solid red;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    gap: 1rem;
+}
+
+.audio-player audio{
+    /*width: 15rem;*/
+    /*height: 15rem;*/
+    margin: 0;
+    padding: 0;
+}
+
+.icon-container {
+    width: 3rem;
+    height: 3rem;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    border-radius: 10px;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    padding: 1rem;
+}
+
+.audio-icon {
+    width: 90%;
+    height: 90%;
+}
