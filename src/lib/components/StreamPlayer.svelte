@@ -23,8 +23,7 @@
 
 <div class="timeline">
     <div class="soundline"></div>
-    <div class="controllers active">
-        <div class="back"></div>
+    <div class="controllers">
         <button class="play" use:playBtnInit>
             {#if active}
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -38,7 +37,6 @@
                 </svg>
             {/if}
         </button>
-        <div class="forward"></div>
     </div>
 </div>
 
