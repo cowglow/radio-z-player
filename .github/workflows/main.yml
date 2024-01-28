@@ -12,6 +12,12 @@ jobs:
   build:
     name: Deploy Update
     runs-on: ubuntu-latest
+    permissions: 
+       pages: write
+       id-token: write
+    environment:
+       name: github-pages
+       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v3.0.2
@@ -26,7 +32,8 @@ jobs:
         run: |
           yarn build
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+        id: deployment
+        uses: actions/deploy-pages@v4
         with:
           branch: gh-pages
           folder: dist/
