@@ -1,7 +1,7 @@
 <div class="head">
     <div class="front">
         <div class="avatar">
-            <img src="http://radio-z.net/templates/radioz/images/logo.png" alt="Radio-Z Dot Net Logo">
+            <img src="https://radio-z.s3-cdn.welocal.cloud/sources/621_prtdr8vquaxrw_9x1anqvmzkgee.svg" alt="Radio-Z Dot Net Logo">
         </div>
         <div class="infos">
             <div class="title">

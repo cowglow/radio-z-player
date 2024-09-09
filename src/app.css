@@ -37,16 +37,16 @@ body {
     background-color: white;
     width: 100%;
     min-height: 200px;
-    box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
 .player .head {
-    background-image: linear-gradient(to bottom, var(--orange) 0, var(--blue) 100%);
+    /*background-image: linear-gradient(to bottom, var(--orange) 0, var(--blue) 100%);*/
     background-repeat: repeat-x;
     padding: 1.75rem;
     color: white;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     height: auto;
     overflow: hidden;
 }
@@ -64,7 +64,7 @@ body {
     position: absolute;
     background-position: left top;
     background-size: cover;
-    background-image: url("http://radio-z.net/templates/radioz/images/header.png");
+    /*background-image: url("https://radio-z.s3-cdn.welocal.cloud/sources/621_prtdr8vquaxrw_9x1anqvmzkgee.svg");*/
     -webkit-filter: blur(0.03rem);
     filter: blur(0.03rem);
 }
@@ -121,7 +121,7 @@ body {
 }
 
 .player .timeline .controllers .play:hover {
-    box-shadow: 0px 0px 10px 2px var(--orange);
+    box-shadow: 0 0 10px 2px var(--orange);
     border: 2px solid var(--blue) !important;
 }
 
@@ -155,26 +155,26 @@ body {
     content: "";
     top: 0;
     left: 0;
-    width: 0%;
+    width: 0;
     height: 100%;
     background: var(--orange);
-    box-shadow: 0px 0px 9px var(--blue);
+    box-shadow: 0 0 9px var(--blue);
     transition: all 0.4s cubic-bezier(0.07, 0.82, 0.11, 1.02);
     animation: 20s soundline infinite both linear;
 }
 
 @keyframes pulseshadowplay {
     0% {
-        box-shadow: 0px 0px 10px 2px var(--orange);
+        box-shadow: 0 0 10px 2px var(--orange);
     }
     50% {
-        box-shadow: 0px 0px 50px 2px var(--orange);
+        box-shadow: 0 0 50px 2px var(--orange);
     }
 }
 
 @keyframes soundline {
     0% {
-        width: 0%;
+        width: 0;
     }
     100% {
         width: 100%;
@@ -183,9 +183,9 @@ body {
 
 @keyframes girandomt {
     0% {
-        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
     }
     100% {
-        box-shadow: 0px 0px 30px 40px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 30px 40px rgba(255, 255, 255, 0);
     }
 }
