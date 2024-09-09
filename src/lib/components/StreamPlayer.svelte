@@ -2,7 +2,7 @@
     import "./StreamPlayer.styles.css"
 
     let active = false
-    const streamUrl = "http://snd.radio-z.net:8000/Radio-Z"
+    const streamUrl = "https://stream.radio-z.net/live"
     const audioFile = new Audio(streamUrl)
 
     function toggleActive() {
